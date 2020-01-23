@@ -1,0 +1,15 @@
+text_passenger_mgt01:
+#  text_passenger_mgt01_001:
+#    passname: "王宝强"
+#    passidnum: "110100198506029992" # 证件号
+#    phone: "13312345678"
+#    exist: "王宝强"
+#    screen: "text_passenger_mgt01_001"
+#    title: "常用乘客管理-新增乘客-身份证"
+  text_passenger_mgt01_002:
+    passname: "李强"
+    passidnum: "120101198506020582" # 证件号
+    phone: ""
+    exist: "李强"
+    screen: "text_passenger_mgt01_002"
+    title: "常用乘客管理-新增乘客-身份证"

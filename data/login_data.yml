@@ -1,0 +1,50 @@
+test_login:
+  test_login_001:
+    username: "13366691616"
+    password: "123456aa"
+    exist: "13366691616"
+    screen: "test_login_001"
+    title: "登录-成功登录"
+  test_longin_002:
+    username: "13366691616"
+    password: "123456qq"
+    exist: "用户密码不匹配，请确认你的用户信息正确无误"
+    screen: "test_login_002"
+    title: "登录-输入错误密码"
+  test_longin_003:
+    username: "18513534855"
+    password: "123456qq"
+    exist: "用户不存在，请确认你的用户信息正确无误"
+    screen: "test_login_003"
+    title: "登录-使用未注册手机号登录"
+  test_longin_004:
+    username: "1336669161"
+    password: "123456qq"
+    exist: "输入的登录名格式有误，请重新输入"
+    screen: "test_login_004"
+    title: "登录-用户名输入小于11位数字"
+  test_longin_005:
+    username: "11166691616"
+    password: "123456qq"
+    exist: "输入的登录名格式有误，请重新输入" #输入的登录名格式有误，请重新输入
+    screen: "test_login_005"
+    title: "登录-用户名输入前三位非运营商段位"
+  test_longin_006:
+    username: "133666916160"
+    password: "123456qq"
+    exist: "13366691616"
+    screen: "test_login_006"
+    title: "登录-用户名输入大于11位，不可录入"
+test_login1:
+  -
+    - "13366691616"
+    - "123456aa"
+    - "13366691616"
+  -
+    - "13366691616"
+    - "123456qq"
+    - "用户密码不匹配，请确认你的用户信息正确无误"
+test_login2:
+  - "2"
+  - "3"
+
